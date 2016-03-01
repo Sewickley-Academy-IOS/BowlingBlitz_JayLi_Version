@@ -14,6 +14,8 @@ class PlayViewController: UIViewController {
     
     var AntX = 200
     var AntY = 675
+    
+    var levels: Int = 1
 
     @IBOutlet weak var secondSafe: UILabel!
     @IBOutlet weak var firstSafe: UILabel!
@@ -45,17 +47,17 @@ class PlayViewController: UIViewController {
         
         PlayerAnt.frame = CGRectMake(200, 650, 50, 50)
         
-        Ball1 = setBowlingBall(Ball1, num: 0)
-        Ball2 = setBowlingBall(Ball2, num: 1)
-        Ball3 = setBowlingBall(Ball3, num: 2)
-        Ball4 = setBowlingBall(Ball4, num: 3)
-        Ball5 = setBowlingBall(Ball5, num: 4)
-        Ball6 = setBowlingBall(Ball6, num: 6)
-        Ball7 = setBowlingBall(Ball7, num: 7)
-        Ball8 = setBowlingBall(Ball8, num: 8)
-        Ball9 = setBowlingBall(Ball9, num: 10)
-        Ball10 = setBowlingBall(Ball10, num: 11)
-        Ball11 = setBowlingBall(Ball11, num: 12)
+        Ball1 = setBowlingBall(Ball1, num: 0, levels)
+        Ball2 = setBowlingBall(Ball2, num: 1, levels)
+        Ball3 = setBowlingBall(Ball3, num: 2, levels)
+        Ball4 = setBowlingBall(Ball4, num: 3, levels)
+        Ball5 = setBowlingBall(Ball5, num: 4, levels)
+        Ball6 = setBowlingBall(Ball6, num: 6, levels)
+        Ball7 = setBowlingBall(Ball7, num: 7, levels)
+        Ball8 = setBowlingBall(Ball8, num: 8, levels)
+        Ball9 = setBowlingBall(Ball9, num: 10, levels)
+        Ball10 = setBowlingBall(Ball10, num: 11, levels)
+        Ball11 = setBowlingBall(Ball11, num: 12, levels)
         bowling_balls.append(Ball1)
         bowling_balls.append(Ball2)
         bowling_balls.append(Ball3)
@@ -127,8 +129,10 @@ class PlayViewController: UIViewController {
             GameOverLabel.backgroundColor = UIColor.greenColor()
             GameOverLabel.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             GameOverLabel.hidden = false
+            GameReset()
         }else{
-            GameOverLabel.setTitle("Game Over", forState: UIControlState.Normal);            GameOverLabel.backgroundColor = UIColor.redColor()
+            GameOverLabel.setTitle("Game Over", forState: UIControlState.Normal);
+            GameOverLabel.backgroundColor = UIColor.redColor()
             GameOverLabel.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             GameOverLabel.hidden = false
         }
@@ -162,12 +166,17 @@ class PlayViewController: UIViewController {
         }
         print("X: \(AntX) Y: \(AntY) \n")
     }
-    func setBowlingBall (ball: BowlingBall, num: Int) -> BowlingBall{
+    func setBowlingBall (ball: BowlingBall, num: Int, level: Int) -> BowlingBall{
         ball.center.x = -50
         ball.center.y = CGFloat((num * 50))
         ball.frame = CGRectMake(ball.center.x,ball.center.y,50,50)
-        ball.sp = Int(arc4random_uniform(8) + 4)
+        ball.sp = Int(arc4random_uniform(6)) + level + 3
         return ball
+    }
+    
+    func GameReset (){
+        AntY = 675
+        AntX = 200
     }
     /*
     // MARK: - Navigation
