@@ -169,7 +169,7 @@ class PlayViewController: UIViewController {
         ball.center.x = -50
         ball.center.y = CGFloat((num * 50))
         ball.frame = CGRectMake(ball.center.x,ball.center.y,50,50)
-        ball.sp = Int(arc4random_uniform(6)) + level
+        ball.sp = Int(arc4random_uniform(7)) + level
         return ball
     }
     
