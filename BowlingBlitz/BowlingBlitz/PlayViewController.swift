@@ -11,9 +11,13 @@ import UIKit
 class PlayViewController: UIViewController {
     
     @IBOutlet weak var GameOverLabel: UIButton!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     var AntX = 200
     var AntY = 675
+    
+    var highestY = 675
+    var score = 0
 
     @IBOutlet weak var secondSafe: UILabel!
     @IBOutlet weak var firstSafe: UILabel!
@@ -110,6 +114,8 @@ class PlayViewController: UIViewController {
         }
         secondSafe.frame = CGRectMake(-40,250,550,50)
         firstSafe.frame = CGRectMake(-40,450,550,50)
+        
+        scoreLabel.text = "Score: \(score)"
 
     }
     func EndGame (){
@@ -152,6 +158,10 @@ class PlayViewController: UIViewController {
             if (AntY < -0){
                 GameOver = false
                 EndGame()
+            }
+            if(AntY < highestY){
+                highestY = AntY
+                score += 10
             }
         }
         if (sender.direction == .Down){
