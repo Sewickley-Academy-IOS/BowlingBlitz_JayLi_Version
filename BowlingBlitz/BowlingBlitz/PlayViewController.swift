@@ -12,12 +12,16 @@ class PlayViewController: UIViewController {
     
     @IBOutlet weak var GameOverLabel: UIButton!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var safe_zone_timer_label: UILabel!
     
     var AntX = 200
     var AntY = 675
     
     var highestY = 675
     var score = 0
+    
+    var in_safe_zone:Bool = false
+    var safe_zone_seconds_left = 5
 
     @IBOutlet weak var secondSafe: UILabel!
     @IBOutlet weak var firstSafe: UILabel!
@@ -41,6 +45,7 @@ class PlayViewController: UIViewController {
     var GameOver = false
     
     var TheGame = NSTimer()
+    var safe_zone_timer = NSTimer()
     
     override func viewDidLoad() {
 
@@ -75,10 +80,10 @@ class PlayViewController: UIViewController {
         super.viewDidLoad()
 
         
-        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var upSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var downSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
         
         leftSwipe.direction = .Left
         rightSwipe.direction = .Right
@@ -92,8 +97,12 @@ class PlayViewController: UIViewController {
         
         PlayerAnt.center = CGPointMake(CGFloat(AntX), CGFloat(AntY))
         
-        TheGame = NSTimer .scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
+        TheGame = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: "PlayGame", userInfo: nil, repeats: true)
 
+        safe_zone_timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector:"safeZoneCountdown", userInfo: nil, repeats: true)
+        
+        safe_zone_timer_label.hidden = true
+        
         
         // Do any additional setup after loading the view.
     }
@@ -116,8 +125,34 @@ class PlayViewController: UIViewController {
         firstSafe.frame = CGRectMake(-40,450,550,50)
         
         scoreLabel.text = "Score: \(score)"
+        
+        if(((AntY > 250) && (AntY < 300)) || ((AntY > 450) && (AntY < 500)))
+        {
+            in_safe_zone = true
+        }
+        else{
+            in_safe_zone = false
+            safe_zone_timer_label.hidden = true
+        }
 
     }
+    
+    
+    func safeZoneCountdown(){
+        if(in_safe_zone){
+            safe_zone_timer_label.hidden = false;
+            safe_zone_timer_label.text = "\(safe_zone_seconds_left)"
+            safe_zone_seconds_left--;
+            
+            if(safe_zone_seconds_left == 0){
+                safe_zone_timer.invalidate();
+                GameOver = true
+                EndGame()
+            }
+        }
+    }
+    
+    
     func EndGame (){
         TheGame.invalidate()
         GameOverLabel.frame = CGRectMake(0, 250, 500, 100)

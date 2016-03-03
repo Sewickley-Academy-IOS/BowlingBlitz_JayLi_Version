@@ -670,8 +670,15 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="720" width="176" height="36"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-AE-cNm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.72068203366901806" blue="0.85910195469899286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="50" width="88" height="88"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -716,17 +723,10 @@
                                 <exclude reference="ljX-94-v6M"/>
                                 <exclude reference="LEz-bz-ZAR"/>
                                 <exclude reference="qhG-P2-skL"/>
+                                <exclude reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="INe-dr-0yT"/>
-                                <exclude reference="RXX-Za-NWd"/>
-                                <exclude reference="Hw5-aQ-2qi"/>
-                                <exclude reference="A3t-gv-5XX"/>
-                                <exclude reference="fvx-0R-Cbf"/>
-                                <exclude reference="uqR-Py-Nfk"/>
-                                <exclude reference="9iP-0C-Ac9"/>
-                                <exclude reference="JRl-OF-07M"/>
-                                <exclude reference="uPX-TJ-cc4"/>
+                                <exclude reference="WGu-SQ-JKj"/>
                                 <exclude reference="Iwe-5K-p3Z"/>
                                 <exclude reference="KiL-ke-yMG"/>
                                 <exclude reference="cnt-p4-MUY"/>
@@ -734,10 +734,18 @@
                                 <exclude reference="O3R-tL-ym5"/>
                                 <exclude reference="kek-z5-rf2"/>
                                 <exclude reference="xUU-Q1-8vA"/>
-                                <exclude reference="Bev-G4-aGx"/>
+                                <exclude reference="9iP-0C-Ac9"/>
+                                <exclude reference="JRl-OF-07M"/>
+                                <exclude reference="uPX-TJ-cc4"/>
                                 <exclude reference="OY6-KP-cFR"/>
+                                <exclude reference="Hw5-aQ-2qi"/>
+                                <exclude reference="A3t-gv-5XX"/>
+                                <exclude reference="fvx-0R-Cbf"/>
+                                <exclude reference="uqR-Py-Nfk"/>
+                                <exclude reference="INe-dr-0yT"/>
+                                <exclude reference="RXX-Za-NWd"/>
+                                <exclude reference="Bev-G4-aGx"/>
                                 <exclude reference="Wae-KV-p9s"/>
-                                <exclude reference="WGu-SQ-JKj"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -758,17 +766,10 @@
                                 <include reference="ljX-94-v6M"/>
                                 <include reference="LEz-bz-ZAR"/>
                                 <include reference="qhG-P2-skL"/>
+                                <include reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="INe-dr-0yT"/>
-                                <include reference="RXX-Za-NWd"/>
-                                <include reference="Hw5-aQ-2qi"/>
-                                <include reference="A3t-gv-5XX"/>
-                                <include reference="fvx-0R-Cbf"/>
-                                <include reference="uqR-Py-Nfk"/>
-                                <include reference="9iP-0C-Ac9"/>
-                                <include reference="JRl-OF-07M"/>
-                                <include reference="uPX-TJ-cc4"/>
+                                <include reference="WGu-SQ-JKj"/>
                                 <include reference="Iwe-5K-p3Z"/>
                                 <include reference="KiL-ke-yMG"/>
                                 <include reference="cnt-p4-MUY"/>
@@ -776,10 +777,18 @@
                                 <include reference="O3R-tL-ym5"/>
                                 <include reference="kek-z5-rf2"/>
                                 <include reference="xUU-Q1-8vA"/>
-                                <include reference="Bev-G4-aGx"/>
+                                <include reference="9iP-0C-Ac9"/>
+                                <include reference="JRl-OF-07M"/>
+                                <include reference="uPX-TJ-cc4"/>
                                 <include reference="OY6-KP-cFR"/>
+                                <include reference="Hw5-aQ-2qi"/>
+                                <include reference="A3t-gv-5XX"/>
+                                <include reference="fvx-0R-Cbf"/>
+                                <include reference="uqR-Py-Nfk"/>
+                                <include reference="INe-dr-0yT"/>
+                                <include reference="RXX-Za-NWd"/>
+                                <include reference="Bev-G4-aGx"/>
                                 <include reference="Wae-KV-p9s"/>
-                                <include reference="WGu-SQ-JKj"/>
                             </mask>
                         </variation>
                     </view>
@@ -798,6 +807,7 @@
                         <outlet property="GameOverLabel" destination="LEz-bz-ZAR" id="WIB-NY-bSM"/>
                         <outlet property="PlayerAnt" destination="ljX-94-v6M" id="wZQ-75-I9R"/>
                         <outlet property="firstSafe" destination="0xg-3L-3Ff" id="udH-p1-IYu"/>
+                        <outlet property="safe_zone_timer_label" destination="VtD-AE-cNm" id="zte-tT-1Hs"/>
                         <outlet property="scoreLabel" destination="qhG-P2-skL" id="BWD-lF-M0c"/>
                         <outlet property="secondSafe" destination="Zxp-YH-ItE" id="yWq-aI-kPU"/>
                     </connections>
