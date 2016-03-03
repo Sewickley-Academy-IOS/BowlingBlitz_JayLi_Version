@@ -47,17 +47,17 @@ class PlayViewController: UIViewController {
         
         PlayerAnt.frame = CGRectMake(200, 650, 50, 50)
         
-        Ball1 = setBowlingBall(Ball1, num: 0, levels)
-        Ball2 = setBowlingBall(Ball2, num: 1, levels)
-        Ball3 = setBowlingBall(Ball3, num: 2, levels)
-        Ball4 = setBowlingBall(Ball4, num: 3, levels)
-        Ball5 = setBowlingBall(Ball5, num: 4, levels)
-        Ball6 = setBowlingBall(Ball6, num: 6, levels)
-        Ball7 = setBowlingBall(Ball7, num: 7, levels)
-        Ball8 = setBowlingBall(Ball8, num: 8, levels)
-        Ball9 = setBowlingBall(Ball9, num: 10, levels)
-        Ball10 = setBowlingBall(Ball10, num: 11, levels)
-        Ball11 = setBowlingBall(Ball11, num: 12, levels)
+        Ball1 = setBowlingBall(Ball1, num: 0, level: levels)
+        Ball2 = setBowlingBall(Ball2, num: 1, level: levels)
+        Ball3 = setBowlingBall(Ball3, num: 2, level: levels)
+        Ball4 = setBowlingBall(Ball4, num: 3, level: levels)
+        Ball5 = setBowlingBall(Ball5, num: 4, level: levels)
+        Ball6 = setBowlingBall(Ball6, num: 6, level: levels)
+        Ball7 = setBowlingBall(Ball7, num: 7, level: levels)
+        Ball8 = setBowlingBall(Ball8, num: 8, level: levels)
+        Ball9 = setBowlingBall(Ball9, num: 10, level: levels)
+        Ball10 = setBowlingBall(Ball10, num: 11, level: levels)
+        Ball11 = setBowlingBall(Ball11, num: 12, level: levels)
         bowling_balls.append(Ball1)
         bowling_balls.append(Ball2)
         bowling_balls.append(Ball3)
@@ -129,7 +129,6 @@ class PlayViewController: UIViewController {
             GameOverLabel.backgroundColor = UIColor.greenColor()
             GameOverLabel.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             GameOverLabel.hidden = false
-            GameReset()
         }else{
             GameOverLabel.setTitle("Game Over", forState: UIControlState.Normal);
             GameOverLabel.backgroundColor = UIColor.redColor()
@@ -155,7 +154,7 @@ class PlayViewController: UIViewController {
             AntY -= 50
             if (AntY < -0){
                 GameOver = false
-                EndGame()
+                GameReset()
             }
         }
         if (sender.direction == .Down){
@@ -170,13 +169,23 @@ class PlayViewController: UIViewController {
         ball.center.x = -50
         ball.center.y = CGFloat((num * 50))
         ball.frame = CGRectMake(ball.center.x,ball.center.y,50,50)
-        ball.sp = Int(arc4random_uniform(6)) + level + 3
+        ball.sp = Int(arc4random_uniform(6)) + level
         return ball
     }
     
     func GameReset (){
         AntY = 675
         AntX = 200
+        levels++
+        var cnt = 0
+        for num in 0...10{
+            bowling_balls[num] = setBowlingBall(bowling_balls[num], num: cnt, level: levels)
+            cnt++
+            if (cnt == 5 || cnt == 9){
+                cnt++
+            }
+        }
+        print(levels)
     }
     /*
     // MARK: - Navigation
