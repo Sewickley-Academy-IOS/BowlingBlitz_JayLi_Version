@@ -13,7 +13,7 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var GameOverLabel: UIButton!
     
     var AntX = 200
-    var AntY = 675
+    var AntY = 703
 
     @IBOutlet weak var secondSafe: UILabel!
     @IBOutlet weak var firstSafe: UILabel!
@@ -32,7 +32,6 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var Ball8: BowlingBall!
     @IBOutlet weak var Ball9: BowlingBall!
     @IBOutlet weak var Ball10: BowlingBall!
-    @IBOutlet weak var Ball11: BowlingBall!
     
     var GameOver = false
     
@@ -55,7 +54,7 @@ class PlayViewController: UIViewController {
         Ball8 = setBowlingBall(Ball8, num: 8)
         Ball9 = setBowlingBall(Ball9, num: 10)
         Ball10 = setBowlingBall(Ball10, num: 11)
-        Ball11 = setBowlingBall(Ball11, num: 12)
+        //Ball11 = setBowlingBall(Ball11, num: 12)
         bowling_balls.append(Ball1)
         bowling_balls.append(Ball2)
         bowling_balls.append(Ball3)
@@ -66,15 +65,15 @@ class PlayViewController: UIViewController {
         bowling_balls.append(Ball8)
         bowling_balls.append(Ball9)
         bowling_balls.append(Ball10)
-        bowling_balls.append(Ball11)
+        //bowling_balls.append(Ball11)
         
         super.viewDidLoad()
 
         
-        var leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var upSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
-        var downSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let rightSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let upSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
+        let downSwipe = UISwipeGestureRecognizer(target: self, action: Selector("handleSwipes:"))
         
         leftSwipe.direction = .Left
         rightSwipe.direction = .Right
@@ -101,7 +100,7 @@ class PlayViewController: UIViewController {
     
     func PlayGame(){
         PlayerAnt.center = CGPointMake(CGFloat(AntX), CGFloat(AntY))
-        for num in 0...10{
+        for num in 0...9{
             bowling_balls[num].Move()
             bowling_balls[num].Reset()
             if (bowling_balls[num].Intersections(PlayerAnt) == true){
@@ -115,23 +114,28 @@ class PlayViewController: UIViewController {
     func EndGame (){
         TheGame.invalidate()
         GameOverLabel.frame = CGRectMake(0, 250, 500, 100)
-        for num in 0...10{
+        
+        for num in 0...9{
             bowling_balls[num].hidden = true
         }
+        
         PlayerAnt.hidden = true
         secondSafe.hidden = true
         firstSafe.hidden = true
         GameOverLabel.frame = CGRectMake(0, 250, 500, 100)
+        
         if (GameOver){
             GameOverLabel.setTitle("You Win", forState: UIControlState.Normal);
             GameOverLabel.backgroundColor = UIColor.greenColor()
             GameOverLabel.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             GameOverLabel.hidden = false
-        }else{
+        }
+        else{
             GameOverLabel.setTitle("Game Over", forState: UIControlState.Normal);            GameOverLabel.backgroundColor = UIColor.redColor()
             GameOverLabel.setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
             GameOverLabel.hidden = false
         }
+        
         GameOverLabel.frame = CGRectMake(0, 250, 500, 100)
     }
     func handleSwipes(sender:UISwipeGestureRecognizer) {
@@ -148,23 +152,23 @@ class PlayViewController: UIViewController {
             }
         }
         if (sender.direction == .Up){
-            AntY -= 50
+            AntY -= 56
             if (AntY < -0){
                 GameOver = false
                 EndGame()
             }
         }
         if (sender.direction == .Down){
-            AntY += 50
+            AntY += 57
             if (AntY > 750){
-                AntY -= 50
+                AntY -= 56
             }
         }
         print("X: \(AntX) Y: \(AntY) \n")
     }
     func setBowlingBall (ball: BowlingBall, num: Int) -> BowlingBall{
         ball.center.x = -50
-        ball.center.y = CGFloat((num * 50))
+        ball.center.y = CGFloat((num * 57))
         ball.frame = CGRectMake(ball.center.x,ball.center.y,50,50)
         ball.sp = Int(arc4random_uniform(8) + 4)
         return ball
