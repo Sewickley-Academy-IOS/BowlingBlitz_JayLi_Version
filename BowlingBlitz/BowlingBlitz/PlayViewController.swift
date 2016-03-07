@@ -14,6 +14,8 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var safe_zone_timer_label: UILabel!
     
+    var levels: Int = 1
+    
     var AntX = 200
     var AntY = 675
     
