@@ -684,6 +684,22 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="jTT-Ge-fjz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-P2-skL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-AE-cNm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.72068203366901806" blue="0.85910195469899286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="50" width="88" height="88"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -697,7 +713,9 @@
                             <constraint firstItem="Zxp-YH-ItE" firstAttribute="top" secondItem="edf-13-wda" secondAttribute="bottom" constant="160" id="JRl-OF-07M" userLabel="Label.top = Top Layout Guide.bottom + 200"/>
                             <constraint firstItem="LEz-bz-ZAR" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="KiL-ke-yMG"/>
                             <constraint firstItem="0xg-3L-3Ff" firstAttribute="top" secondItem="LEz-bz-ZAR" secondAttribute="bottom" id="O3R-tL-ym5"/>
+                            <constraint firstItem="qhG-P2-skL" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="OY6-KP-cFR"/>
                             <constraint firstItem="aqR-QR-HVp" firstAttribute="top" secondItem="edf-13-wda" secondAttribute="bottom" id="RXX-Za-NWd"/>
+                            <constraint firstItem="qHx-MV-lx1" firstAttribute="top" secondItem="qhG-P2-skL" secondAttribute="bottom" constant="44" id="WGu-SQ-JKj"/>
                             <constraint firstItem="ljX-94-v6M" firstAttribute="centerX" secondItem="0xg-3L-3Ff" secondAttribute="centerX" id="Wae-KV-p9s"/>
                             <constraint firstItem="LEz-bz-ZAR" firstAttribute="top" secondItem="Zxp-YH-ItE" secondAttribute="bottom" id="cnt-p4-MUY"/>
                             <constraint firstItem="JGK-qy-Mwb" firstAttribute="leading" secondItem="ZKV-w5-4gB" secondAttribute="leading" id="fvx-0R-Cbf"/>
@@ -723,8 +741,11 @@
                                 <exclude reference="Zxp-YH-ItE"/>
                                 <exclude reference="ljX-94-v6M"/>
                                 <exclude reference="LEz-bz-ZAR"/>
+                                <exclude reference="qhG-P2-skL"/>
+                                <exclude reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="WGu-SQ-JKj"/>
                                 <exclude reference="Iwe-5K-p3Z"/>
                                 <exclude reference="KiL-ke-yMG"/>
                                 <exclude reference="cnt-p4-MUY"/>
@@ -735,6 +756,7 @@
                                 <exclude reference="9iP-0C-Ac9"/>
                                 <exclude reference="JRl-OF-07M"/>
                                 <exclude reference="uPX-TJ-cc4"/>
+                                <exclude reference="OY6-KP-cFR"/>
                                 <exclude reference="Hw5-aQ-2qi"/>
                                 <exclude reference="A3t-gv-5XX"/>
                                 <exclude reference="fvx-0R-Cbf"/>
@@ -762,8 +784,11 @@
                                 <include reference="Zxp-YH-ItE"/>
                                 <include reference="ljX-94-v6M"/>
                                 <include reference="LEz-bz-ZAR"/>
+                                <include reference="qhG-P2-skL"/>
+                                <include reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="WGu-SQ-JKj"/>
                                 <include reference="Iwe-5K-p3Z"/>
                                 <include reference="KiL-ke-yMG"/>
                                 <include reference="cnt-p4-MUY"/>
@@ -774,6 +799,7 @@
                                 <include reference="9iP-0C-Ac9"/>
                                 <include reference="JRl-OF-07M"/>
                                 <include reference="uPX-TJ-cc4"/>
+                                <include reference="OY6-KP-cFR"/>
                                 <include reference="Hw5-aQ-2qi"/>
                                 <include reference="A3t-gv-5XX"/>
                                 <include reference="fvx-0R-Cbf"/>
@@ -800,13 +826,15 @@
                         <outlet property="GameOverLabel" destination="LEz-bz-ZAR" id="WIB-NY-bSM"/>
                         <outlet property="PlayerAnt" destination="ljX-94-v6M" id="wZQ-75-I9R"/>
                         <outlet property="firstSafe" destination="0xg-3L-3Ff" id="udH-p1-IYu"/>
+                        <outlet property="safe_zone_timer_label" destination="VtD-AE-cNm" id="zte-tT-1Hs"/>
+                        <outlet property="scoreLabel" destination="qhG-P2-skL" id="BWD-lF-M0c"/>
                         <outlet property="secondSafe" destination="Zxp-YH-ItE" id="yWq-aI-kPU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWk-ZP-ct2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="FUu-yA-zck"/>
             </objects>
-            <point key="canvasLocation" x="1824" y="365.25"/>
+            <point key="canvasLocation" x="1819.5" y="382.5"/>
         </scene>
     </scenes>
     <resources>
