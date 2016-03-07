@@ -184,6 +184,10 @@
                         <constraints>
                             <constraint firstItem="YeL-aY-Jnl" firstAttribute="leading" secondItem="F2f-cs-lSf" secondAttribute="leadingMargin" constant="-20" id="Add-BS-PHo"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YeL-aY-Jnl" secondAttribute="trailing" constant="-20" id="M2i-O9-WAb"/>
+                            <constraint firstItem="QFZ-yV-dmi" firstAttribute="leading" secondItem="F2f-cs-lSf" secondAttribute="leadingMargin" id="ZRC-fE-d1p"/>
+                            <constraint firstItem="YeL-aY-Jnl" firstAttribute="centerX" secondItem="QFZ-yV-dmi" secondAttribute="centerX" id="ZWb-Yl-hgu"/>
+                            <constraint firstItem="YeL-aY-Jnl" firstAttribute="top" secondItem="s8R-Au-WVB" secondAttribute="bottom" id="dwB-5i-3kj"/>
+                            <constraint firstItem="QFZ-yV-dmi" firstAttribute="top" secondItem="YeL-aY-Jnl" secondAttribute="bottom" constant="87" id="oFV-pf-zDX"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -194,6 +198,10 @@
                             <mask key="constraints">
                                 <exclude reference="Add-BS-PHo"/>
                                 <exclude reference="M2i-O9-WAb"/>
+                                <exclude reference="ZWb-Yl-hgu"/>
+                                <exclude reference="dwB-5i-3kj"/>
+                                <exclude reference="ZRC-fE-d1p"/>
+                                <exclude reference="oFV-pf-zDX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -205,6 +213,10 @@
                             <mask key="constraints">
                                 <include reference="Add-BS-PHo"/>
                                 <include reference="M2i-O9-WAb"/>
+                                <include reference="ZWb-Yl-hgu"/>
+                                <include reference="dwB-5i-3kj"/>
+                                <include reference="ZRC-fE-d1p"/>
+                                <include reference="oFV-pf-zDX"/>
                             </mask>
                         </variation>
                     </view>
@@ -608,9 +620,25 @@
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <animations/>
                                 <connections>
-                                    <segue destination="gCM-Ui-aGk" kind="unwind" unwindAction="GameFinished:" id="c09-dH-Pe7"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="jTT-Ge-fjz"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-P2-skL">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-AE-cNm">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="backgroundColor" red="1" green="0.72068203366901806" blue="0.85910195469899286" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="156" y="50" width="88" height="88"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -626,7 +654,9 @@
                             <constraint firstItem="Zxp-YH-ItE" firstAttribute="top" secondItem="edf-13-wda" secondAttribute="bottom" constant="160" id="JRl-OF-07M" userLabel="Label.top = Top Layout Guide.bottom + 200"/>
                             <constraint firstItem="LEz-bz-ZAR" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="KiL-ke-yMG"/>
                             <constraint firstItem="0xg-3L-3Ff" firstAttribute="top" secondItem="LEz-bz-ZAR" secondAttribute="bottom" id="O3R-tL-ym5"/>
+                            <constraint firstItem="qhG-P2-skL" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="OY6-KP-cFR"/>
                             <constraint firstItem="aqR-QR-HVp" firstAttribute="top" secondItem="edf-13-wda" secondAttribute="bottom" id="RXX-Za-NWd"/>
+                            <constraint firstItem="qHx-MV-lx1" firstAttribute="top" secondItem="qhG-P2-skL" secondAttribute="bottom" constant="44" id="WGu-SQ-JKj"/>
                             <constraint firstItem="ljX-94-v6M" firstAttribute="centerX" secondItem="0xg-3L-3Ff" secondAttribute="centerX" id="Wae-KV-p9s"/>
                             <constraint firstItem="XF1-zg-nBa" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="a8m-wp-gDr"/>
                             <constraint firstItem="LEz-bz-ZAR" firstAttribute="top" secondItem="Zxp-YH-ItE" secondAttribute="bottom" id="cnt-p4-MUY"/>
@@ -657,6 +687,8 @@
                                 <exclude reference="ljX-94-v6M"/>
                                 <exclude reference="5A5-rn-2oT"/>
                                 <exclude reference="LEz-bz-ZAR"/>
+                                <exclude reference="qhG-P2-skL"/>
+                                <exclude reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="4t1-JJ-v1w"/>
@@ -702,6 +734,8 @@
                                 <include reference="ljX-94-v6M"/>
                                 <include reference="5A5-rn-2oT"/>
                                 <include reference="LEz-bz-ZAR"/>
+                                <include reference="qhG-P2-skL"/>
+                                <include reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="4t1-JJ-v1w"/>
@@ -745,14 +779,15 @@
                         <outlet property="GameOverLabel" destination="LEz-bz-ZAR" id="WIB-NY-bSM"/>
                         <outlet property="PlayerAnt" destination="ljX-94-v6M" id="wZQ-75-I9R"/>
                         <outlet property="firstSafe" destination="0xg-3L-3Ff" id="udH-p1-IYu"/>
+                        <outlet property="safe_zone_timer_label" destination="VtD-AE-cNm" id="zte-tT-1Hs"/>
+                        <outlet property="scoreLabel" destination="qhG-P2-skL" id="BWD-lF-M0c"/>
                         <outlet property="secondSafe" destination="Zxp-YH-ItE" id="yWq-aI-kPU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWk-ZP-ct2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="gCM-Ui-aGk" userLabel="Exit" sceneMemberID="exit"/>
                 <swipeGestureRecognizer direction="right" id="FUu-yA-zck"/>
             </objects>
-            <point key="canvasLocation" x="1824" y="365.25"/>
+            <point key="canvasLocation" x="1819.5" y="382.5"/>
         </scene>
     </scenes>
     <resources>
