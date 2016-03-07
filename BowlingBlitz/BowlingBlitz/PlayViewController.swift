@@ -145,7 +145,7 @@ class PlayViewController: UIViewController {
             safe_zone_timer_label.text = "\(safe_zone_seconds_left)"
             safe_zone_seconds_left--;
             
-            if(safe_zone_seconds_left == 0){
+            if(safe_zone_seconds_left < 0){
                 safe_zone_timer.invalidate();
                 GameOver = false
                 EndGame()
