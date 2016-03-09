@@ -14,6 +14,7 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var safe_zone_timer_label: UILabel!
     
+    var levels = 1
     var AntX = 200
     var AntY = 703
 
@@ -37,6 +38,10 @@ class PlayViewController: UIViewController {
     
     var GameOver = false
     
+    var highestY = 703
+    var in_safe_zone = false
+    var score = 0
+    var safe_zone_seconds_left = 5
     var TheGame = NSTimer()
     var safe_zone_timer = NSTimer()
     
@@ -47,16 +52,16 @@ class PlayViewController: UIViewController {
         
         PlayerAnt.frame = CGRectMake(200, 650, 50, 50)
         
-        Ball1 = setBowlingBall(Ball1, num: 0)
-        Ball2 = setBowlingBall(Ball2, num: 1)
-        Ball3 = setBowlingBall(Ball3, num: 2)
-        Ball4 = setBowlingBall(Ball4, num: 3)
-        Ball5 = setBowlingBall(Ball5, num: 4)
-        Ball6 = setBowlingBall(Ball6, num: 6)
-        Ball7 = setBowlingBall(Ball7, num: 7)
-        Ball8 = setBowlingBall(Ball8, num: 8)
-        Ball9 = setBowlingBall(Ball9, num: 10)
-        Ball10 = setBowlingBall(Ball10, num: 11)
+        Ball1 = setBowlingBall(Ball1, num: 0, level: levels)
+        Ball2 = setBowlingBall(Ball2, num: 1, level: levels)
+        Ball3 = setBowlingBall(Ball3, num: 2, level: levels)
+        Ball4 = setBowlingBall(Ball4, num: 3, level: levels)
+        Ball5 = setBowlingBall(Ball5, num: 4, level: levels)
+        Ball6 = setBowlingBall(Ball6, num: 6, level: levels)
+        Ball7 = setBowlingBall(Ball7, num: 7, level: levels)
+        Ball8 = setBowlingBall(Ball8, num: 8, level: levels)
+        Ball9 = setBowlingBall(Ball9, num: 10, level: levels)
+        Ball10 = setBowlingBall(Ball10, num: 11, level: levels)
         //Ball11 = setBowlingBall(Ball11, num: 12)
         bowling_balls.append(Ball1)
         bowling_balls.append(Ball2)
@@ -119,7 +124,7 @@ class PlayViewController: UIViewController {
         
         scoreLabel.text = "Score: \(score)"
         
-        if(((AntY > 250) && (AntY < 300)) || ((AntY > 450) && (AntY < 500)))
+        if(((AntY > 289) && (AntY < 342)) || ((AntY > 513) && (AntY < 570)))
         {
             in_safe_zone = true
         }
@@ -128,7 +133,6 @@ class PlayViewController: UIViewController {
             safe_zone_timer_label.hidden = true
             safe_zone_seconds_left = 5
         }
-
     }
     
     
@@ -150,7 +154,7 @@ class PlayViewController: UIViewController {
     func EndGame (){
         TheGame.invalidate()
         GameOverLabel.frame = CGRectMake(0, 250, 500, 100)
-        
+        safe_zone_timer_label.hidden = true
         for num in 0...9{
             bowling_balls[num].hidden = true
         }
@@ -215,11 +219,11 @@ class PlayViewController: UIViewController {
     }
     
     func GameReset (){
-        AntY = 675
+        AntY = 703
         AntX = 200
         levels++
         var cnt = 0
-        for num in 0...10{
+        for num in 0...9{
             bowling_balls[num] = setBowlingBall(bowling_balls[num], num: cnt, level: levels)
             cnt++
             if (cnt == 5 || cnt == 9){

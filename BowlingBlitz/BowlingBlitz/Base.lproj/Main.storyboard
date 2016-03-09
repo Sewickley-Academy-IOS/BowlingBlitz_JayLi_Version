@@ -32,9 +32,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="147" width="360" height="46"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5Q-iv-LUY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -69,9 +66,6 @@
                                 <state key="normal" title="Credits">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="391" width="360" height="57"/>
-                                </variation>
                                 <connections>
                                     <segue destination="way-MT-d2H" kind="showDetail" id="tfT-Wz-vnF"/>
                                 </connections>
@@ -163,9 +157,6 @@
                                 <items>
                                     <navigationItem title="Credits" id="cm6-uu-BEo"/>
                                 </items>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="20" width="400" height="44"/>
-                                </variation>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QFZ-yV-dmi">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -174,7 +165,7 @@
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
                                     <rect key="frame" x="20" y="151" width="360" height="760"/>
                                 </variation>
                             </textView>
@@ -252,9 +243,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="187" width="360" height="78"/>
-                                </variation>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnz-pP-qR7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
@@ -262,9 +250,6 @@
                                 <color key="backgroundColor" red="0.34237512508851353" green="1" blue="0.038535826192485301" alpha="0.42021276595744683" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Begin"/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="475" width="360" height="88"/>
-                                </variation>
                                 <connections>
                                     <segue destination="xgP-jZ-9Em" kind="show" id="fzB-1V-sEZ"/>
                                 </connections>
@@ -382,9 +367,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaxBowlingAlley" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-zg-nBa">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <animations/>
-                                <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
-                                </variation>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-0P-LUw" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
@@ -625,12 +607,14 @@
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-P2-skL">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-AE-cNm">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.72068203366901806" blue="0.85910195469899286" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -691,6 +675,20 @@
                                 <exclude reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="Iwe-5K-p3Z"/>
+                                <exclude reference="KiL-ke-yMG"/>
+                                <exclude reference="cnt-p4-MUY"/>
+                                <exclude reference="0Ak-YH-K4X"/>
+                                <exclude reference="O3R-tL-ym5"/>
+                                <exclude reference="kek-z5-rf2"/>
+                                <exclude reference="xUU-Q1-8vA"/>
+                                <exclude reference="9iP-0C-Ac9"/>
+                                <exclude reference="JRl-OF-07M"/>
+                                <exclude reference="uPX-TJ-cc4"/>
+                                <exclude reference="Hw5-aQ-2qi"/>
+                                <exclude reference="A3t-gv-5XX"/>
+                                <exclude reference="fvx-0R-Cbf"/>
+                                <exclude reference="uqR-Py-Nfk"/>
                                 <exclude reference="4t1-JJ-v1w"/>
                                 <exclude reference="a8m-wp-gDr"/>
                                 <exclude reference="e21-jb-yJ7"/>
@@ -699,20 +697,6 @@
                                 <exclude reference="whN-Pq-U7P"/>
                                 <exclude reference="INe-dr-0yT"/>
                                 <exclude reference="RXX-Za-NWd"/>
-                                <exclude reference="Hw5-aQ-2qi"/>
-                                <exclude reference="A3t-gv-5XX"/>
-                                <exclude reference="fvx-0R-Cbf"/>
-                                <exclude reference="uqR-Py-Nfk"/>
-                                <exclude reference="9iP-0C-Ac9"/>
-                                <exclude reference="JRl-OF-07M"/>
-                                <exclude reference="uPX-TJ-cc4"/>
-                                <exclude reference="Iwe-5K-p3Z"/>
-                                <exclude reference="KiL-ke-yMG"/>
-                                <exclude reference="cnt-p4-MUY"/>
-                                <exclude reference="0Ak-YH-K4X"/>
-                                <exclude reference="O3R-tL-ym5"/>
-                                <exclude reference="kek-z5-rf2"/>
-                                <exclude reference="xUU-Q1-8vA"/>
                                 <exclude reference="Bev-G4-aGx"/>
                                 <exclude reference="Wae-KV-p9s"/>
                             </mask>
@@ -738,6 +722,20 @@
                                 <include reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="Iwe-5K-p3Z"/>
+                                <include reference="KiL-ke-yMG"/>
+                                <include reference="cnt-p4-MUY"/>
+                                <include reference="0Ak-YH-K4X"/>
+                                <include reference="O3R-tL-ym5"/>
+                                <include reference="kek-z5-rf2"/>
+                                <include reference="xUU-Q1-8vA"/>
+                                <include reference="9iP-0C-Ac9"/>
+                                <include reference="JRl-OF-07M"/>
+                                <include reference="uPX-TJ-cc4"/>
+                                <include reference="Hw5-aQ-2qi"/>
+                                <include reference="A3t-gv-5XX"/>
+                                <include reference="fvx-0R-Cbf"/>
+                                <include reference="uqR-Py-Nfk"/>
                                 <include reference="4t1-JJ-v1w"/>
                                 <include reference="a8m-wp-gDr"/>
                                 <include reference="e21-jb-yJ7"/>
@@ -746,20 +744,6 @@
                                 <include reference="whN-Pq-U7P"/>
                                 <include reference="INe-dr-0yT"/>
                                 <include reference="RXX-Za-NWd"/>
-                                <include reference="Hw5-aQ-2qi"/>
-                                <include reference="A3t-gv-5XX"/>
-                                <include reference="fvx-0R-Cbf"/>
-                                <include reference="uqR-Py-Nfk"/>
-                                <include reference="9iP-0C-Ac9"/>
-                                <include reference="JRl-OF-07M"/>
-                                <include reference="uPX-TJ-cc4"/>
-                                <include reference="Iwe-5K-p3Z"/>
-                                <include reference="KiL-ke-yMG"/>
-                                <include reference="cnt-p4-MUY"/>
-                                <include reference="0Ak-YH-K4X"/>
-                                <include reference="O3R-tL-ym5"/>
-                                <include reference="kek-z5-rf2"/>
-                                <include reference="xUU-Q1-8vA"/>
                                 <include reference="Bev-G4-aGx"/>
                                 <include reference="Wae-KV-p9s"/>
                             </mask>
