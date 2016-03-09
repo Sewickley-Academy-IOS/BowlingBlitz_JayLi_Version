@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -19,38 +18,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Alley" translatesAutoresizingMaskIntoConstraints="NO" id="87v-Q2-vRX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaxBowlingAlley" translatesAutoresizingMaskIntoConstraints="NO" id="Bxe-3f-mL8">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Alley" translatesAutoresizingMaskIntoConstraints="NO" id="azq-K0-3F7">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcJ-r4-1iy">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Credits">
-                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="way-MT-d2H" kind="showDetail" id="tfT-Wz-vnF"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Alley" translatesAutoresizingMaskIntoConstraints="NO" id="Kn0-5B-5Oz">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bowling Blitz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ouf-Th-aae">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5Q-iv-LUY">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="lDD-z6-be7"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Play">
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -68,66 +58,40 @@
                                     <segue destination="Div-4h-oCO" kind="show" id="lYG-TB-cY8"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Alley" translatesAutoresizingMaskIntoConstraints="NO" id="vpv-gJ-bN2">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Alley" translatesAutoresizingMaskIntoConstraints="NO" id="A1A-xO-cJb">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="497" width="400" height="193"/>
-                                </variation>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZcJ-r4-1iy">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Credits">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="way-MT-d2H" kind="showDetail" id="tfT-Wz-vnF"/>
+                                </connections>
+                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="vpv-gJ-bN2" secondAttribute="trailing" constant="-20" id="3h9-IL-TM7"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="5I6-dS-XWt"/>
                             <constraint firstItem="ZcJ-r4-1iy" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Hf-VF-0OK"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="width" secondItem="Kn0-5B-5Oz" secondAttribute="width" id="7rD-zc-DIY"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="height" secondItem="Kn0-5B-5Oz" secondAttribute="height" id="8tT-ch-fol"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="top" secondItem="ZcJ-r4-1iy" secondAttribute="bottom" id="DSn-9C-06z"/>
                             <constraint firstItem="ouf-Th-aae" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="EX6-XM-x9H"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="top" secondItem="ouf-Th-aae" secondAttribute="bottom" id="HSm-iF-dAd"/>
-                            <constraint firstItem="vpv-gJ-bN2" firstAttribute="top" secondItem="A1A-xO-cJb" secondAttribute="bottom" id="KBx-kw-Bmt"/>
-                            <constraint firstItem="Kn0-5B-5Oz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="LIy-Ob-l61"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Lpl-Mf-whG"/>
                             <constraint firstItem="ZcJ-r4-1iy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="NLe-DY-vh9"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kn0-5B-5Oz" secondAttribute="trailing" constant="-20" id="NkH-gs-fYa"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="width" secondItem="Kn0-5B-5Oz" secondAttribute="width" id="PBs-im-OJU"/>
                             <constraint firstItem="q5Q-iv-LUY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Qdu-jr-gY3"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kn0-5B-5Oz" secondAttribute="trailing" constant="-20" id="RDC-84-61j"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="top" secondItem="87v-Q2-vRX" secondAttribute="bottom" id="SHd-NA-UoU"/>
                             <constraint firstItem="q5Q-iv-LUY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SsD-SL-nAg"/>
-                            <constraint firstItem="Kn0-5B-5Oz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="VGf-3M-Bbw"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="azq-K0-3F7" secondAttribute="trailing" constant="-20" id="X4W-QT-4sO"/>
                             <constraint firstItem="ouf-Th-aae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XYC-QA-ak2"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="top" secondItem="ouf-Th-aae" secondAttribute="bottom" id="YXs-FR-7U2"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="87v-Q2-vRX" secondAttribute="trailing" constant="-20" id="Zgq-go-pV2"/>
-                            <constraint firstItem="ZcJ-r4-1iy" firstAttribute="top" secondItem="q5Q-iv-LUY" secondAttribute="bottom" constant="8" symbolic="YES" id="Zqf-an-IHT"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="height" secondItem="Kn0-5B-5Oz" secondAttribute="height" id="aSW-yG-Rva"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="azq-K0-3F7" secondAttribute="trailing" constant="-20" id="d0D-TF-qnb"/>
-                            <constraint firstItem="Kn0-5B-5Oz" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="gZf-S3-bI4"/>
-                            <constraint firstItem="vpv-gJ-bN2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="kPy-AL-7zY"/>
+                            <constraint firstItem="ZcJ-r4-1iy" firstAttribute="top" secondItem="q5Q-iv-LUY" secondAttribute="bottom" constant="8" symbolic="YES" id="Zqf-an-IHT">
+                                <variation key="heightClass=regular-widthClass=compact" constant="70"/>
+                            </constraint>
                             <constraint firstItem="ouf-Th-aae" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="127" id="l33-Vl-cqO"/>
-                            <constraint firstItem="azq-K0-3F7" firstAttribute="top" secondItem="ZcJ-r4-1iy" secondAttribute="bottom" id="nlv-t6-AJf"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="oOt-QF-Hwe"/>
-                            <constraint firstItem="Kn0-5B-5Oz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="qzZ-y3-FL4"/>
                             <constraint firstItem="q5Q-iv-LUY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="236" id="rNv-mm-lMg"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="top" secondItem="Kn0-5B-5Oz" secondAttribute="bottom" id="tur-S4-EJK"/>
-                            <constraint firstItem="A1A-xO-cJb" firstAttribute="top" secondItem="azq-K0-3F7" secondAttribute="bottom" id="vtA-7M-hXn"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="87v-Q2-vRX" secondAttribute="trailing" constant="-20" id="wYa-rj-pjj"/>
-                            <constraint firstItem="87v-Q2-vRX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="xsj-gg-5G2"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="87v-Q2-vRX"/>
-                                <exclude reference="azq-K0-3F7"/>
-                                <exclude reference="ZcJ-r4-1iy"/>
-                                <exclude reference="Kn0-5B-5Oz"/>
+                                <exclude reference="Bxe-3f-mL8"/>
                                 <exclude reference="ouf-Th-aae"/>
                                 <exclude reference="q5Q-iv-LUY"/>
-                                <exclude reference="vpv-gJ-bN2"/>
-                                <exclude reference="A1A-xO-cJb"/>
+                                <exclude reference="ZcJ-r4-1iy"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="7Hf-VF-0OK"/>
@@ -139,46 +103,14 @@
                                 <exclude reference="EX6-XM-x9H"/>
                                 <exclude reference="XYC-QA-ak2"/>
                                 <exclude reference="l33-Vl-cqO"/>
-                                <exclude reference="8tT-ch-fol"/>
-                                <exclude reference="HSm-iF-dAd"/>
-                                <exclude reference="PBs-im-OJU"/>
-                                <exclude reference="YXs-FR-7U2"/>
-                                <exclude reference="Zgq-go-pV2"/>
-                                <exclude reference="oOt-QF-Hwe"/>
-                                <exclude reference="tur-S4-EJK"/>
-                                <exclude reference="wYa-rj-pjj"/>
-                                <exclude reference="xsj-gg-5G2"/>
-                                <exclude reference="vtA-7M-hXn"/>
-                                <exclude reference="LIy-Ob-l61"/>
-                                <exclude reference="NkH-gs-fYa"/>
-                                <exclude reference="RDC-84-61j"/>
-                                <exclude reference="VGf-3M-Bbw"/>
-                                <exclude reference="gZf-S3-bI4"/>
-                                <exclude reference="qzZ-y3-FL4"/>
-                                <exclude reference="5I6-dS-XWt"/>
-                                <exclude reference="7rD-zc-DIY"/>
-                                <exclude reference="DSn-9C-06z"/>
-                                <exclude reference="Lpl-Mf-whG"/>
-                                <exclude reference="SHd-NA-UoU"/>
-                                <exclude reference="X4W-QT-4sO"/>
-                                <exclude reference="aSW-yG-Rva"/>
-                                <exclude reference="d0D-TF-qnb"/>
-                                <exclude reference="nlv-t6-AJf"/>
-                                <exclude reference="3h9-IL-TM7"/>
-                                <exclude reference="KBx-kw-Bmt"/>
-                                <exclude reference="kPy-AL-7zY"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="87v-Q2-vRX"/>
-                                <include reference="azq-K0-3F7"/>
-                                <include reference="ZcJ-r4-1iy"/>
-                                <include reference="Kn0-5B-5Oz"/>
+                                <include reference="Bxe-3f-mL8"/>
                                 <include reference="ouf-Th-aae"/>
                                 <include reference="q5Q-iv-LUY"/>
-                                <include reference="vpv-gJ-bN2"/>
-                                <include reference="A1A-xO-cJb"/>
+                                <include reference="ZcJ-r4-1iy"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="7Hf-VF-0OK"/>
@@ -190,34 +122,6 @@
                                 <include reference="EX6-XM-x9H"/>
                                 <include reference="XYC-QA-ak2"/>
                                 <include reference="l33-Vl-cqO"/>
-                                <include reference="8tT-ch-fol"/>
-                                <include reference="HSm-iF-dAd"/>
-                                <include reference="PBs-im-OJU"/>
-                                <include reference="YXs-FR-7U2"/>
-                                <include reference="Zgq-go-pV2"/>
-                                <include reference="oOt-QF-Hwe"/>
-                                <include reference="tur-S4-EJK"/>
-                                <include reference="wYa-rj-pjj"/>
-                                <include reference="xsj-gg-5G2"/>
-                                <include reference="vtA-7M-hXn"/>
-                                <include reference="LIy-Ob-l61"/>
-                                <include reference="NkH-gs-fYa"/>
-                                <include reference="RDC-84-61j"/>
-                                <include reference="VGf-3M-Bbw"/>
-                                <include reference="gZf-S3-bI4"/>
-                                <include reference="qzZ-y3-FL4"/>
-                                <include reference="5I6-dS-XWt"/>
-                                <include reference="7rD-zc-DIY"/>
-                                <include reference="DSn-9C-06z"/>
-                                <include reference="Lpl-Mf-whG"/>
-                                <include reference="SHd-NA-UoU"/>
-                                <include reference="X4W-QT-4sO"/>
-                                <include reference="aSW-yG-Rva"/>
-                                <include reference="d0D-TF-qnb"/>
-                                <include reference="nlv-t6-AJf"/>
-                                <include reference="3h9-IL-TM7"/>
-                                <include reference="KBx-kw-Bmt"/>
-                                <include reference="kPy-AL-7zY"/>
                             </mask>
                         </variation>
                     </view>
@@ -238,33 +142,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaxBowlingAlley" translatesAutoresizingMaskIntoConstraints="NO" id="dtQ-6D-4m2">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                            </imageView>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YeL-aY-Jnl">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.96920649556675631" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.64900029973169937" green="0.91887057624617363" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <items>
                                     <navigationItem title="Credits" id="cm6-uu-BEo"/>
                                 </items>
                             </navigationBar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QFZ-yV-dmi">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="760" id="uJw-hS-ei7"/>
-                                </constraints>
+                                <animations/>
+                                <color key="backgroundColor" red="0.90312245038403893" green="0.64444016154744321" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="uJw-hS-ei7"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="uJw-hS-ei7"/>
-                                    </mask>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="20" y="151" width="360" height="760"/>
                                 </variation>
                             </textView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YeL-aY-Jnl" firstAttribute="leading" secondItem="F2f-cs-lSf" secondAttribute="leadingMargin" constant="-20" id="Add-BS-PHo"/>
@@ -276,6 +182,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="dtQ-6D-4m2"/>
                                 <exclude reference="YeL-aY-Jnl"/>
                                 <exclude reference="QFZ-yV-dmi"/>
                             </mask>
@@ -290,6 +197,7 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="dtQ-6D-4m2"/>
                                 <include reference="YeL-aY-Jnl"/>
                                 <include reference="QFZ-yV-dmi"/>
                             </mask>
@@ -321,20 +229,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaxBowlingAlley" translatesAutoresizingMaskIntoConstraints="NO" id="bsi-fs-2QI">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your objective is to get to the other side of the bowling alley without getting hit by any of the bowling balls." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u76-YM-O2D">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="0.42021276595744683" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dnz-pP-qR7">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.34237512508851353" green="1" blue="0.038535826192485301" alpha="0.42021276595744683" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Begin"/>
                                 <connections>
                                     <segue destination="xgP-jZ-9Em" kind="show" id="fzB-1V-sEZ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Your objective is to get to the other side of the bowling alley without getting hit by any of the bowling balls." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u76-YM-O2D">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="u76-YM-O2D" firstAttribute="leading" secondItem="ckL-iw-hno" secondAttribute="leadingMargin" id="1g4-2m-DDn"/>
@@ -347,8 +268,9 @@
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Dnz-pP-qR7"/>
+                                <exclude reference="bsi-fs-2QI"/>
                                 <exclude reference="u76-YM-O2D"/>
+                                <exclude reference="Dnz-pP-qR7"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="HBz-5u-7FI"/>
@@ -362,8 +284,9 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
-                                <include reference="Dnz-pP-qR7"/>
+                                <include reference="bsi-fs-2QI"/>
                                 <include reference="u76-YM-O2D"/>
+                                <include reference="Dnz-pP-qR7"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="HBz-5u-7FI"/>
@@ -393,250 +316,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-0P-LUw" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="4VD-Zl-OgY"/>
-                                    <constraint firstAttribute="width" constant="50" id="wTd-vX-8sV"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="4VD-Zl-OgY"/>
-                                        <exclude reference="wTd-vX-8sV"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="10" y="662" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="4VD-Zl-OgY"/>
-                                        <include reference="wTd-vX-8sV"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="aqR-QR-HVp" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Zch-nY-yAe"/>
-                                    <constraint firstAttribute="width" constant="50" id="gnY-oO-qL6"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Zch-nY-yAe"/>
-                                        <exclude reference="gnY-oO-qL6"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="Zch-nY-yAe"/>
-                                        <include reference="gnY-oO-qL6"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-z9-cbG" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Oh0-wP-QQ0"/>
-                                    <constraint firstAttribute="width" constant="50" id="X6k-du-p6q"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="Oh0-wP-QQ0"/>
-                                        <exclude reference="X6k-du-p6q"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="69" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="Oh0-wP-QQ0"/>
-                                        <include reference="X6k-du-p6q"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="D12-zs-CwP" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="NnC-TN-NTG"/>
-                                    <constraint firstAttribute="width" constant="50" id="pbJ-UJ-obx"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="NnC-TN-NTG"/>
-                                        <exclude reference="pbJ-UJ-obx"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="89" y="645" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="NnC-TN-NTG"/>
-                                        <include reference="pbJ-UJ-obx"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-rn-2oT" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="0qZ-0T-Nvs"/>
-                                    <constraint firstAttribute="width" constant="50" id="omq-Id-Uul"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="0qZ-0T-Nvs"/>
-                                        <exclude reference="omq-Id-Uul"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="10" y="574" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="0qZ-0T-Nvs"/>
-                                        <include reference="omq-Id-Uul"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="whs-cb-Mgm" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="2wu-UQ-rAx"/>
-                                    <constraint firstAttribute="width" constant="50" id="Bl4-WC-8sA"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="2wu-UQ-rAx"/>
-                                        <exclude reference="Bl4-WC-8sA"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="564" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="2wu-UQ-rAx"/>
-                                        <include reference="Bl4-WC-8sA"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="gFK-kB-bZW" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="bo8-9p-rtx"/>
-                                    <constraint firstAttribute="width" constant="50" id="tq7-tQ-vDl"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="bo8-9p-rtx"/>
-                                        <exclude reference="tq7-tQ-vDl"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="506" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="bo8-9p-rtx"/>
-                                        <include reference="tq7-tQ-vDl"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="gzX-gR-gMI" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="MJS-Ul-acF"/>
-                                    <constraint firstAttribute="width" constant="50" id="OaS-V1-f93"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="MJS-Ul-acF"/>
-                                        <exclude reference="OaS-V1-f93"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="448" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="MJS-Ul-acF"/>
-                                        <include reference="OaS-V1-f93"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="JGK-qy-Mwb" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="VyL-fF-wsK"/>
-                                    <constraint firstAttribute="height" constant="50" id="ipO-9e-zol"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="VyL-fF-wsK"/>
-                                        <exclude reference="ipO-9e-zol"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="122" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="VyL-fF-wsK"/>
-                                        <include reference="ipO-9e-zol"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="ZKV-w5-4gB" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AIh-aE-zBR"/>
-                                    <constraint firstAttribute="width" constant="50" id="eZm-r4-dQ8"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="AIh-aE-zBR"/>
-                                        <exclude reference="eZm-r4-dQ8"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="293" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="AIh-aE-zBR"/>
-                                        <include reference="eZm-r4-dQ8"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="zxH-Cy-wIo" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="B42-1q-m30"/>
-                                    <constraint firstAttribute="width" constant="50" id="Fe6-da-cDz"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="B42-1q-m30"/>
-                                        <exclude reference="Fe6-da-cDz"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="230" width="50" height="50"/>
-                                    <mask key="constraints">
-                                        <include reference="B42-1q-m30"/>
-                                        <include reference="Fe6-da-cDz"/>
-                                    </mask>
-                                </variation>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xg-3L-3Ff">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="5LY-Ix-NjL"/>
-                                    <constraint firstAttribute="width" constant="400" id="El0-3P-s0M"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="5LY-Ix-NjL"/>
-                                        <exclude reference="El0-3P-s0M"/>
-                                    </mask>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="5LY-Ix-NjL"/>
-                                        <include reference="El0-3P-s0M"/>
-                                    </mask>
-                                </variation>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxp-YH-ItE">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3ui-OD-1xq"/>
@@ -658,8 +340,225 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0xg-3L-3Ff">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="5LY-Ix-NjL"/>
+                                    <constraint firstAttribute="width" constant="400" id="El0-3P-s0M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="5LY-Ix-NjL"/>
+                                        <exclude reference="El0-3P-s0M"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="5LY-Ix-NjL"/>
+                                        <include reference="El0-3P-s0M"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MaxBowlingAlley" translatesAutoresizingMaskIntoConstraints="NO" id="XF1-zg-nBa">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="LZh-0P-LUw" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4VD-Zl-OgY"/>
+                                    <constraint firstAttribute="width" constant="50" id="wTd-vX-8sV"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4VD-Zl-OgY"/>
+                                        <exclude reference="wTd-vX-8sV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="667" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="4VD-Zl-OgY"/>
+                                        <include reference="wTd-vX-8sV"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="aqR-QR-HVp" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Zch-nY-yAe"/>
+                                    <constraint firstAttribute="width" constant="50" id="gnY-oO-qL6"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Zch-nY-yAe"/>
+                                        <exclude reference="gnY-oO-qL6"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Zch-nY-yAe"/>
+                                        <include reference="gnY-oO-qL6"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="3oY-z9-cbG" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Oh0-wP-QQ0"/>
+                                    <constraint firstAttribute="width" constant="50" id="X6k-du-p6q"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Oh0-wP-QQ0"/>
+                                        <exclude reference="X6k-du-p6q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="69" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="Oh0-wP-QQ0"/>
+                                        <include reference="X6k-du-p6q"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="whs-cb-Mgm" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2wu-UQ-rAx"/>
+                                    <constraint firstAttribute="width" constant="50" id="Bl4-WC-8sA"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2wu-UQ-rAx"/>
+                                        <exclude reference="Bl4-WC-8sA"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="619" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="2wu-UQ-rAx"/>
+                                        <include reference="Bl4-WC-8sA"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="gFK-kB-bZW" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="bo8-9p-rtx"/>
+                                    <constraint firstAttribute="width" constant="50" id="tq7-tQ-vDl"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="bo8-9p-rtx"/>
+                                        <exclude reference="tq7-tQ-vDl"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="506" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="bo8-9p-rtx"/>
+                                        <include reference="tq7-tQ-vDl"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="gzX-gR-gMI" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="MJS-Ul-acF"/>
+                                    <constraint firstAttribute="width" constant="50" id="OaS-V1-f93"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="MJS-Ul-acF"/>
+                                        <exclude reference="OaS-V1-f93"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="448" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="MJS-Ul-acF"/>
+                                        <include reference="OaS-V1-f93"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="JGK-qy-Mwb" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="VyL-fF-wsK"/>
+                                    <constraint firstAttribute="height" constant="50" id="ipO-9e-zol"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VyL-fF-wsK"/>
+                                        <exclude reference="ipO-9e-zol"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="122" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="VyL-fF-wsK"/>
+                                        <include reference="ipO-9e-zol"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="ZKV-w5-4gB" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AIh-aE-zBR"/>
+                                    <constraint firstAttribute="width" constant="50" id="eZm-r4-dQ8"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="AIh-aE-zBR"/>
+                                        <exclude reference="eZm-r4-dQ8"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="293" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="AIh-aE-zBR"/>
+                                        <include reference="eZm-r4-dQ8"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="zxH-Cy-wIo" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="B42-1q-m30"/>
+                                    <constraint firstAttribute="width" constant="50" id="Fe6-da-cDz"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="B42-1q-m30"/>
+                                        <exclude reference="Fe6-da-cDz"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="230" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="B42-1q-m30"/>
+                                        <include reference="Fe6-da-cDz"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ant" translatesAutoresizingMaskIntoConstraints="NO" id="ljX-94-v6M">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="3hG-vi-Dbs"/>
                                     <constraint firstAttribute="width" constant="50" id="JbI-aX-jmR"/>
@@ -671,27 +570,51 @@
                                     </mask>
                                 </variation>
                                 <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="175" y="719" width="50" height="50"/>
+                                    <rect key="frame" x="175" y="675" width="50" height="50"/>
                                     <mask key="constraints">
                                         <include reference="3hG-vi-Dbs"/>
                                         <include reference="JbI-aX-jmR"/>
                                     </mask>
                                 </variation>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bowling Ball" translatesAutoresizingMaskIntoConstraints="NO" id="5A5-rn-2oT" customClass="BowlingBall" customModule="BowlingBlitz" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0qZ-0T-Nvs"/>
+                                    <constraint firstAttribute="width" constant="50" id="omq-Id-Uul"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0qZ-0T-Nvs"/>
+                                        <exclude reference="omq-Id-Uul"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="561" width="50" height="50"/>
+                                    <mask key="constraints">
+                                        <include reference="0qZ-0T-Nvs"/>
+                                        <include reference="omq-Id-Uul"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEz-bz-ZAR">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <animations/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="jTT-Ge-fjz"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhG-P2-skL">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VtD-AE-cNm">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.72068203366901806" blue="0.85910195469899286" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="62"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -701,9 +624,11 @@
                                 </variation>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="0xg-3L-3Ff" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="0Ak-YH-K4X"/>
+                            <constraint firstItem="XF1-zg-nBa" firstAttribute="top" secondItem="Ijy-3p-Gkr" secondAttribute="topMargin" id="4t1-JJ-v1w"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Zxp-YH-ItE" secondAttribute="trailing" constant="-20" id="9iP-0C-Ac9"/>
                             <constraint firstItem="JGK-qy-Mwb" firstAttribute="leading" secondItem="zxH-Cy-wIo" secondAttribute="leading" id="A3t-gv-5XX"/>
                             <constraint firstItem="gzX-gR-gMI" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="Bev-G4-aGx"/>
@@ -717,35 +642,39 @@
                             <constraint firstItem="aqR-QR-HVp" firstAttribute="top" secondItem="edf-13-wda" secondAttribute="bottom" id="RXX-Za-NWd"/>
                             <constraint firstItem="qHx-MV-lx1" firstAttribute="top" secondItem="qhG-P2-skL" secondAttribute="bottom" constant="44" id="WGu-SQ-JKj"/>
                             <constraint firstItem="ljX-94-v6M" firstAttribute="centerX" secondItem="0xg-3L-3Ff" secondAttribute="centerX" id="Wae-KV-p9s"/>
+                            <constraint firstItem="XF1-zg-nBa" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="a8m-wp-gDr"/>
                             <constraint firstItem="LEz-bz-ZAR" firstAttribute="top" secondItem="Zxp-YH-ItE" secondAttribute="bottom" id="cnt-p4-MUY"/>
+                            <constraint firstItem="XF1-zg-nBa" firstAttribute="top" secondItem="Ijy-3p-Gkr" secondAttribute="topMargin" id="e21-jb-yJ7"/>
                             <constraint firstItem="JGK-qy-Mwb" firstAttribute="leading" secondItem="ZKV-w5-4gB" secondAttribute="leading" id="fvx-0R-Cbf"/>
                             <constraint firstItem="0xg-3L-3Ff" firstAttribute="top" secondItem="Zxp-YH-ItE" secondAttribute="bottom" constant="160" id="kek-z5-rf2" userLabel="Label.top = Label.bottom + 150"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XF1-zg-nBa" secondAttribute="trailing" constant="-20" id="m0n-Nd-V0Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XF1-zg-nBa" secondAttribute="trailing" constant="-20" id="pLA-Z3-rDo"/>
                             <constraint firstItem="Zxp-YH-ItE" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="uPX-TJ-cc4"/>
                             <constraint firstItem="JGK-qy-Mwb" firstAttribute="leading" secondItem="3oY-z9-cbG" secondAttribute="leading" id="uqR-Py-Nfk"/>
+                            <constraint firstItem="XF1-zg-nBa" firstAttribute="leading" secondItem="Ijy-3p-Gkr" secondAttribute="leadingMargin" constant="-20" id="whN-Pq-U7P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0xg-3L-3Ff" secondAttribute="trailing" constant="-20" id="xUU-Q1-8vA"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
+                                <exclude reference="Zxp-YH-ItE"/>
+                                <exclude reference="0xg-3L-3Ff"/>
+                                <exclude reference="XF1-zg-nBa"/>
                                 <exclude reference="LZh-0P-LUw"/>
                                 <exclude reference="aqR-QR-HVp"/>
                                 <exclude reference="3oY-z9-cbG"/>
-                                <exclude reference="D12-zs-CwP"/>
-                                <exclude reference="5A5-rn-2oT"/>
                                 <exclude reference="whs-cb-Mgm"/>
                                 <exclude reference="gFK-kB-bZW"/>
                                 <exclude reference="gzX-gR-gMI"/>
                                 <exclude reference="JGK-qy-Mwb"/>
                                 <exclude reference="ZKV-w5-4gB"/>
                                 <exclude reference="zxH-Cy-wIo"/>
-                                <exclude reference="0xg-3L-3Ff"/>
-                                <exclude reference="Zxp-YH-ItE"/>
                                 <exclude reference="ljX-94-v6M"/>
+                                <exclude reference="5A5-rn-2oT"/>
                                 <exclude reference="LEz-bz-ZAR"/>
                                 <exclude reference="qhG-P2-skL"/>
                                 <exclude reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="WGu-SQ-JKj"/>
                                 <exclude reference="Iwe-5K-p3Z"/>
                                 <exclude reference="KiL-ke-yMG"/>
                                 <exclude reference="cnt-p4-MUY"/>
@@ -756,11 +685,16 @@
                                 <exclude reference="9iP-0C-Ac9"/>
                                 <exclude reference="JRl-OF-07M"/>
                                 <exclude reference="uPX-TJ-cc4"/>
-                                <exclude reference="OY6-KP-cFR"/>
                                 <exclude reference="Hw5-aQ-2qi"/>
                                 <exclude reference="A3t-gv-5XX"/>
                                 <exclude reference="fvx-0R-Cbf"/>
                                 <exclude reference="uqR-Py-Nfk"/>
+                                <exclude reference="4t1-JJ-v1w"/>
+                                <exclude reference="a8m-wp-gDr"/>
+                                <exclude reference="e21-jb-yJ7"/>
+                                <exclude reference="m0n-Nd-V0Y"/>
+                                <exclude reference="pLA-Z3-rDo"/>
+                                <exclude reference="whN-Pq-U7P"/>
                                 <exclude reference="INe-dr-0yT"/>
                                 <exclude reference="RXX-Za-NWd"/>
                                 <exclude reference="Bev-G4-aGx"/>
@@ -769,26 +703,25 @@
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
+                                <include reference="Zxp-YH-ItE"/>
+                                <include reference="0xg-3L-3Ff"/>
+                                <include reference="XF1-zg-nBa"/>
                                 <include reference="LZh-0P-LUw"/>
                                 <include reference="aqR-QR-HVp"/>
                                 <include reference="3oY-z9-cbG"/>
-                                <include reference="D12-zs-CwP"/>
-                                <include reference="5A5-rn-2oT"/>
                                 <include reference="whs-cb-Mgm"/>
                                 <include reference="gFK-kB-bZW"/>
                                 <include reference="gzX-gR-gMI"/>
                                 <include reference="JGK-qy-Mwb"/>
                                 <include reference="ZKV-w5-4gB"/>
                                 <include reference="zxH-Cy-wIo"/>
-                                <include reference="0xg-3L-3Ff"/>
-                                <include reference="Zxp-YH-ItE"/>
                                 <include reference="ljX-94-v6M"/>
+                                <include reference="5A5-rn-2oT"/>
                                 <include reference="LEz-bz-ZAR"/>
                                 <include reference="qhG-P2-skL"/>
                                 <include reference="VtD-AE-cNm"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="WGu-SQ-JKj"/>
                                 <include reference="Iwe-5K-p3Z"/>
                                 <include reference="KiL-ke-yMG"/>
                                 <include reference="cnt-p4-MUY"/>
@@ -799,11 +732,16 @@
                                 <include reference="9iP-0C-Ac9"/>
                                 <include reference="JRl-OF-07M"/>
                                 <include reference="uPX-TJ-cc4"/>
-                                <include reference="OY6-KP-cFR"/>
                                 <include reference="Hw5-aQ-2qi"/>
                                 <include reference="A3t-gv-5XX"/>
                                 <include reference="fvx-0R-Cbf"/>
                                 <include reference="uqR-Py-Nfk"/>
+                                <include reference="4t1-JJ-v1w"/>
+                                <include reference="a8m-wp-gDr"/>
+                                <include reference="e21-jb-yJ7"/>
+                                <include reference="m0n-Nd-V0Y"/>
+                                <include reference="pLA-Z3-rDo"/>
+                                <include reference="whN-Pq-U7P"/>
                                 <include reference="INe-dr-0yT"/>
                                 <include reference="RXX-Za-NWd"/>
                                 <include reference="Bev-G4-aGx"/>
@@ -814,7 +752,6 @@
                     <connections>
                         <outlet property="Ball1" destination="aqR-QR-HVp" id="Rjb-i4-Umk"/>
                         <outlet property="Ball10" destination="LZh-0P-LUw" id="DuC-yB-PY6"/>
-                        <outlet property="Ball11" destination="D12-zs-CwP" id="eYo-Hi-0QI"/>
                         <outlet property="Ball2" destination="3oY-z9-cbG" id="fLc-pN-Bd6"/>
                         <outlet property="Ball3" destination="JGK-qy-Mwb" id="sMh-0r-Ek1"/>
                         <outlet property="Ball4" destination="zxH-Cy-wIo" id="cUI-fv-5VW"/>
@@ -839,7 +776,7 @@
     </scenes>
     <resources>
         <image name="Ant" width="106" height="149"/>
-        <image name="Bowling Alley" width="235" height="193"/>
         <image name="Bowling Ball" width="1148" height="1148"/>
+        <image name="MaxBowlingAlley" width="469" height="830"/>
     </resources>
 </document>
