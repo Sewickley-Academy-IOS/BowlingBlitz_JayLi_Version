@@ -116,7 +116,10 @@ class PlayViewController: UIViewController {
     }
     
     func PlayGame(){
-        PlayerAnt.center = CGPointMake(CGFloat(AntX), CGFloat(AntY))
+        PlayerAnt.center.x = CGFloat(AntX)
+        PlayerAnt.center.y = CGFloat(AntY)
+        scoreLabel.center.x = CGFloat(45)
+        scoreLabel.center.y = CGFloat(700)
         for num in 0...10{
             bowling_balls[num].Move()
             bowling_balls[num].Reset()
