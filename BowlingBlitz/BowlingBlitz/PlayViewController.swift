@@ -198,7 +198,6 @@ class PlayViewController: UIViewController {
                 GameReset()
             }
             if(AntY < highestY){
-                highestY = AntY
                 score += 10
             }
         }
@@ -207,6 +206,7 @@ class PlayViewController: UIViewController {
             if (AntY > 750){
                 AntY -= 56
             }
+            score -= 10
         }
         print("X: \(AntX) Y: \(AntY) \n")
     }
