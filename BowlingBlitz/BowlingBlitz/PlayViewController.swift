@@ -118,7 +118,7 @@ class PlayViewController: UIViewController {
     func PlayGame(){
         PlayerAnt.center.x = CGFloat(AntX)
         PlayerAnt.center.y = CGFloat(AntY)
-        scoreLabel.center.x = CGFloat(45)
+        scoreLabel.center.x = CGFloat(50)
         scoreLabel.center.y = CGFloat(700)
         for num in 0...10{
             bowling_balls[num].Move()
